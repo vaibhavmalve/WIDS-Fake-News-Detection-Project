@@ -1,5 +1,8 @@
 # WIDS-Project
-An end-to-end NLP and machine learning project for classifying news as fake or real. Covers text preprocessing, feature extraction, Logistic Regression with scikit-learn, train–test workflows, pipelines, and evaluation using accuracy and classification metrics
+An end-to-end NLP and machine learning project for classifying news as fake or real. Covers
+text preprocessing, feature extraction, Logistic Regression with scikit-learn, train–test
+workflows, pipelines, and evaluation using accuracy and classification metrics.
+
 # Fake News Detection using Natural Language Processing
 
 This repository contains the work completed for the **Mid-Term Assignment** of the
@@ -18,6 +21,31 @@ on textual content.
 
 The current phase (mid-term) emphasizes **foundational understanding**, including data
 handling, exploratory analysis, preprocessing, model building, and evaluation.
+
+---
+
+## 📖 Introduction to Machine Learning
+
+Machine Learning (ML) is a branch of artificial intelligence that enables systems to learn
+patterns from data and make predictions without being explicitly programmed for every rule.
+Instead of fixed instructions, models improve their performance by learning from examples.
+
+### Supervised Learning
+Supervised learning involves training a model on labeled data, where each input is paired
+with a known output. The model learns a mapping between features and labels. Common tasks
+include classification and regression.
+
+This project primarily uses **supervised learning**, where the input consists of news
+article text and the labels indicate whether the article is *fake* or *real*. Logistic
+Regression is used as a baseline supervised classification model.
+
+### Unsupervised Learning
+Unsupervised learning works with unlabeled data and focuses on discovering hidden patterns
+or structures in the data. Typical applications include clustering and dimensionality
+reduction.
+
+Although unsupervised learning is not the main focus of this project, understanding it is
+useful for tasks such as exploratory analysis and topic modeling in text-based problems.
 
 ---
 
@@ -90,4 +118,5 @@ This repository represents the **mid-term progress** of the project.
 Future work will focus on advanced feature extraction (e.g., TF-IDF) and improving model
 performance using more sophisticated NLP approaches.
 
+---
 
