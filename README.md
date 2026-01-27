@@ -5,8 +5,7 @@ workflows, pipelines, and evaluation using accuracy and classification metrics.
 
 # Fake News Detection using Natural Language Processing
 
-This repository contains the work completed for the **Mid-Term Assignment** of the
-**Winter in Data Science Programme**.  
+This repository contains the work completed for the **Winter in Data Science Programme**.  
 The project focuses on understanding and implementing an end-to-end data science and
 machine learning workflow for **Fake News Detection** using **Natural Language Processing (NLP)**.
 
@@ -19,104 +18,110 @@ an important problem in data science. This project explores how data-driven tech
 machine learning models can be applied to classify news articles as *fake* or *real* based
 on textual content.
 
-The current phase (mid-term) emphasizes **foundational understanding**, including data
-handling, exploratory analysis, preprocessing, model building, and evaluation.
+The project progressed from foundational machine learning concepts to the implementation
+of complete NLP pipelines suitable for real-world text classification problems.
 
 ---
 
 ## 📖 Introduction to Machine Learning
 
 Machine Learning (ML) is a branch of artificial intelligence that enables systems to learn
-patterns from data and make predictions without being explicitly programmed for every rule.
-Instead of fixed instructions, models improve their performance by learning from examples.
+patterns from data and make predictions without being explicitly programmed. Models improve
+their performance by learning from examples rather than following fixed rules.
 
 ### Supervised Learning
 Supervised learning involves training a model on labeled data, where each input is paired
-with a known output. The model learns a mapping between features and labels. Common tasks
-include classification and regression.
+with a known output. The model learns a mapping between features and labels.
 
-This project primarily uses **supervised learning**, where the input consists of news
-article text and the labels indicate whether the article is *fake* or *real*. Logistic
-Regression is used as a baseline supervised classification model.
+In this project, supervised learning is applied where the input consists of news article
+text and the output label indicates whether the article is *fake* or *real*. Logistic
+Regression is used as a baseline model, and the final classification is performed using a
+**Passive Aggressive Classifier**, which is well suited for large-scale text data.
 
 ### Unsupervised Learning
-Unsupervised learning works with unlabeled data and focuses on discovering hidden patterns
-or structures in the data. Typical applications include clustering and dimensionality
-reduction.
-
-Although unsupervised learning is not the main focus of this project, understanding it is
-useful for tasks such as exploratory analysis and topic modeling in text-based problems.
+Unsupervised learning works with unlabeled data and focuses on identifying hidden patterns
+or structures. While not used for final classification, its concepts support exploratory
+analysis and understanding the structure of textual data.
 
 ---
 
-## 🧠 What This Project Covers
+## 🧠 Project Workflow
 
-The work in this repository is organized across multiple Jupyter notebooks, each focusing
-on a specific stage of the workflow:
+The project is organized across multiple Jupyter notebooks, each addressing a key stage of
+the machine learning and NLP pipeline:
 
-- **Data Understanding and Loading**
-  - Reading CSV and TSV datasets using pandas
-  - Handling different delimiters and formats
-  - Inspecting data using `head()`, `info()`, and `shape()`
+### 🔹 Data Understanding and Loading
+- Reading CSV datasets using pandas
+- Inspecting datasets using `head()`, `info()`, and `shape()`
+- Separating textual features and class labels
 
-- **Exploratory Data Analysis (EDA)**
-  - Descriptive statistics
-  - Grouping and aggregation using `groupby()`
-  - Identifying patterns and trends in data
+### 🔹 Exploratory Data Analysis (EDA)
+- Analyzing class distribution
+- Identifying patterns and imbalance in the dataset
+- Using grouping and aggregation techniques
 
-- **Data Manipulation and Integration**
-  - Creating DataFrames from raw data structures
-  - Index handling and alignment
-  - Row-wise and column-wise concatenation using `pd.concat()`
+### 🔹 Data Manipulation
+- Creating and modifying DataFrames
+- Handling indices and alignment
+- Combining datasets using concatenation
 
-- **Visualization and Interpretation**
-  - Basic plots using `matplotlib`
-  - Interpreting relationships and anomalies
-  - Understanding limitations of visual analysis
+### 🔹 Text Preprocessing (NLP)
+- Text cleaning and normalization
+- Stop-word removal
+- Preparing text for feature extraction
 
-- **Machine Learning and NLP**
-  - Text preprocessing and cleaning
-  - Train–test split for supervised learning
-  - Logistic Regression as a baseline model
-  - Use of scikit-learn Pipelines
-  - Model evaluation using:
-    - Accuracy score
-    - Confusion matrix
-    - Classification report (precision, recall, F1-score)
+### 🔹 Feature Extraction
+- Understanding Bag-of-Words representations
+- Applying **TF-IDF Vectorization** to capture term importance
+- Working with high-dimensional sparse text features
+
+### 🔹 Machine Learning Models
+- Train–test split with reproducibility
+- Logistic Regression as a baseline classifier
+- **Passive Aggressive Classifier for final model training**
+- Proper use of pipelines to prevent data leakage
+
+### 🔹 Model Evaluation
+- Accuracy score
+- Confusion matrix
+- Classification report including precision, recall, and F1-score
+- Interpretation of results using multiple evaluation metrics
+
+### 🔹 Model Persistence and Interaction
+- Saving trained models using `joblib`
+- Building a basic interactive interface using **Gradio** for predictions
 
 ---
 
 ## 🛠 Libraries and Tools Used
 
-- Python
-- pandas
-- NumPy
-- matplotlib
-- scikit-learn
-- Jupyter Notebook
+- Python  
+- pandas  
+- NumPy  
+- matplotlib  
+- scikit-learn  
+- joblib  
+- Gradio  
+- Jupyter Notebook  
 
 ---
 
 ## 📈 Learning Outcomes
 
-Through this project, I developed a clear understanding of:
-- End-to-end machine learning workflows
-- Handling and preprocessing real-world text data
-- Proper use of training and testing splits
-- Model fitting, transformation, and prediction
-- Interpreting evaluation metrics beyond accuracy
-- The importance of pipelines and validation to avoid data leakage
+Through the completion of this project, I developed a clear and practical understanding of:
 
-These learnings form a strong foundation for extending the project to more advanced NLP
-techniques in later stages.
+- End-to-end NLP and machine learning workflows
+- Handling and preprocessing real-world textual data
+- Feature extraction techniques such as TF-IDF
+- Selecting appropriate models for text classification
+- Evaluating classification models using multiple performance metrics
+- Designing pipelines that ensure reliable and reproducible results
 
----
-
-## 🚧 Current Status
-
-This repository represents the **mid-term progress** of the project.  
-Future work will focus on advanced feature extraction (e.g., TF-IDF) and improving model
-performance using more sophisticated NLP approaches.
+This project represents the successful completion of an applied NLP and machine learning
+task as part of the **Winter in Data Science Programme**.
 
 ---
 
+### ✅ Final Result
+A complete, well-structured **Fake News Detection system** implemented using NLP and
+supervised machine learning techniques.
